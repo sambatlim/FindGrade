@@ -1,6 +1,6 @@
 function getGrade() {
   var score, result, fromInput;
-  const n = 88488;
+  const n = 117061;
   fromInput = document.getElementById("InputScore").value;
   score = parseFloat(fromInput);
   if (score == "NaN") {
