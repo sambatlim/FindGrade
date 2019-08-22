@@ -1,6 +1,8 @@
 function getGrade() {
   var score, result, fromInput;
-  const n = 117061;
+  //var n = 117061;
+    var getyear = document.getElementById("year");
+    var n=getyear.options[getyear.selectedIndex].value;
   fromInput = document.getElementById("InputScore").value;
   score = parseFloat(fromInput);
   if (score == "NaN") {
@@ -13,5 +15,6 @@ function getGrade() {
     var z = y + 100;
     result = Math.floor(z / 100);
   }
+  document.getElementById("total").innerHTML=n;
   document.getElementById("showGrade").innerHTML = result;
 }
