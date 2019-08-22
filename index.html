@@ -25,25 +25,39 @@
 <body>
 
     <nav class="navbar navbar-light bg-light navbar-nav">
-        <span class="navbar-brand mb-0 h1">រកចំណាត់ថ្នាក់ប្រចាំឆ្នាំ២០១៨</span>
+        <span class="navbar-brand mb-0 h1">រកចំណាត់ថ្នាក់ប្រឡងថ្នាក់ជាតិ</span>
     </nav>
+    
     <div class="container">
         <div class="row">
+            
             <div class="col-sm-6 col-sm-offset-3">
                 <div id="imaginary_container">
+                    
+                    <div class="form-group">
+                    <label style="color: white">ជ្រើសរើសឆ្នាំប្រឡងរបស់អ្នក</label>
+                    <select class="form-control" id="year">
+                            <option value="117061">2018</option>
+                            <option value="117043" selected="selected">2019</option>
+                    </select>
+                    </div>
+                    
                     <div class="input-group">
                         <input type="text" id="InputScore" class="form-control" placeholder="បញ្ចូលលំដាប់ពិន្ទុរបស់អ្នក">
                         <button type="button" class="btn btn-success" onclick="getGrade()">បង្ហាញ</button>
-
                     </div>
+                    
                 </div>
             </div>
+            
         </div>
+        
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <div id="imaginary_container">
+            <div class="col-sm-12 col-sm-offset-3">
+                <div style="margin-top: 2rem">
                     <div class="input-group">
-                        <h4 style="color:white">សិស្សសរុប: &nbsp 117,061</h4>
+                        <h4 style="color:white">សិស្សសរុប: &nbsp</h4>
+                        <h4 style="color: white" id="total"></h4>
                     </div>
                     <div class="input-group">
                         <h3 style="color:white">ចំណាត់ថ្នាក់របស់អ្នកគឺ: &nbsp </h3>
